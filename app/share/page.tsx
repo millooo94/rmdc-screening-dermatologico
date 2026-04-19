@@ -3,7 +3,7 @@ import { LandingPage } from "@/components/landing/landing-page";
 
 const shareUrl = "https://screening.remedic.it/share";
 const shareImage = "https://screening.remedic.it/images/og-share.jpg";
-const shareTitle = "Screening Dermatologico a 60 euro | Remedic";
+const shareTitle = "Screening Dermatologico | Remedic";
 const shareDescription =
   "Maggio e il mese della prevenzione. Prenota il tuo screening dermatologico con mappatura dei nei.";
 
