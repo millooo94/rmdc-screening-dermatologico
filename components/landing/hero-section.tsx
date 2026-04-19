@@ -87,7 +87,8 @@ export function HeroSection() {
               className="mb-6 rounded-2xl border border-border bg-card/95 p-5 shadow-xl backdrop-blur-sm md:p-6"
             >
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
-                Screening dermatologico + mappatura dei nei
+                Screening dermatologico{" "}
+                <span className="whitespace-nowrap">+ mappatura dei nei</span>
               </p>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-bold text-primary">60</span>
