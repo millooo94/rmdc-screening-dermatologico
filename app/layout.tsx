@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://screening.remedic.it");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -28,10 +28,12 @@ export const metadata: Metadata = {
     title: 'Screening Dermatologico a 60€ | Remedic',
     description: 'Maggio è il mese della prevenzione. Prenota il tuo screening dermatologico con mappatura dei nei.',
     type: 'website',
+    siteName: 'Remedic',
+    locale: 'it_IT',
     url: '/',
     images: [
       {
-        url: '/images/og.png',
+        url: `${siteUrl}/images/og.png`,
         width: 1200,
         height: 630,
         alt: 'Remedic - Screening Dermatologico',
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Screening Dermatologico a 60€ | Remedic',
     description: 'Maggio è il mese della prevenzione. Prenota il tuo screening dermatologico con mappatura dei nei.',
-    images: ['/images/og.png'],
+    images: [`${siteUrl}/images/og.png`],
   },
 }
 
