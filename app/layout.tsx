@@ -15,12 +15,13 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://screening.remedic.it");
+const siteUrl = "https://screening.remedic.it";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
   title: 'Remedic | Screening Dermatologico Maggio 2025 - Prevenzione Melanoma',
   description: 'Maggio è il mese della consapevolezza sul melanoma. Prenota il tuo screening dermatologico con mappatura dei nei a soli 60€. Remedic - Centro Medico Polispecialistico.',
   keywords: ['screening dermatologico', 'mappatura nei', 'melanoma', 'prevenzione', 'dermatologia', 'Remedic'],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Remedic',
     locale: 'it_IT',
-    url: '/',
+    url: siteUrl,
     images: [
       {
         url: `${siteUrl}/images/og.png`,
