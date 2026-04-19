@@ -59,7 +59,7 @@ export function FinalCtaSection() {
               <Button
                 asChild
                 size="lg"
-                className="h-14 w-full rounded-xl bg-[#25D366] text-base font-semibold text-white shadow-lg hover:bg-[#20BD5A]"
+                className="h-14 w-full rounded-xl bg-[#25D366] text-base font-semibold text-white shadow-lg hover:bg-[#20BD5A] md:w-auto md:flex-1"
               >
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=Ciao, vorrei prenotare uno screening dermatologico.`}
@@ -75,7 +75,7 @@ export function FinalCtaSection() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="h-14 w-full rounded-xl border-2 border-primary text-base font-semibold text-primary hover:bg-primary hover:text-primary-foreground"
+                className="h-14 w-full rounded-xl border-2 border-primary text-base font-semibold text-primary hover:bg-primary hover:text-primary-foreground md:w-auto md:flex-1"
               >
                 <a href={`tel:${PHONE_NUMBER}`}>
                   <Phone className="mr-2 h-5 w-5" />

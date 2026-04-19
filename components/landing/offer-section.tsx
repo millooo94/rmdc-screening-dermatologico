@@ -26,8 +26,8 @@ export function OfferSection() {
     <section ref={sectionRef} className="relative overflow-hidden">
       {/* Full-width Image with Parallax */}
       <div className="relative h-[45vh] md:h-[50vh]">
-        <motion.div 
-          style={{ y: imageY, scale: imageScale }} 
+        <motion.div
+          style={{ y: imageY, scale: imageScale }}
           className="absolute inset-0 h-[130%] -top-[15%]"
         >
           <Image
@@ -38,7 +38,7 @@ export function OfferSection() {
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-transparent" />
-        
+
         {/* Floating Price Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -47,7 +47,9 @@ export function OfferSection() {
           transition={{ duration: 0.5 }}
           className="absolute top-6 right-6 bg-white rounded-2xl p-4 shadow-2xl"
         >
-          <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Solo</p>
+          <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
+            Solo
+          </p>
           <div className="flex items-baseline">
             <span className="text-3xl font-bold text-primary">60</span>
             <span className="text-lg font-semibold text-primary">€</span>
@@ -68,13 +70,13 @@ export function OfferSection() {
             Offerta Maggio 2025
           </p>
           <h2 className="mb-5 text-xl font-bold leading-tight text-balance md:text-2xl">
-            Screening dermatologico con mappatura digitale dei nei inclusa
+            Screening dermatologico con mappatura dei nei
           </h2>
 
           <ul className="space-y-3">
             {features.map((feature, index) => (
-              <motion.li 
-                key={feature} 
+              <motion.li
+                key={feature}
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -84,7 +86,9 @@ export function OfferSection() {
                 <div className="flex-shrink-0 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
                   <Check className="w-3 h-3 text-white" />
                 </div>
-                <span className="text-sm text-primary-foreground/90">{feature}</span>
+                <span className="text-sm text-primary-foreground/90">
+                  {feature}
+                </span>
               </motion.li>
             ))}
           </ul>

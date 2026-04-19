@@ -42,7 +42,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative flex min-h-[66svh] flex-col justify-end px-5 pb-6 pt-20 md:min-h-screen md:pt-24">
+      <div className="relative flex min-h-[66svh] flex-col justify-end px-5 pb-6 pt-20 md:min-h-screen md:justify-center md:pb-10 md:pt-28">
         <div className="mx-auto w-full max-w-md md:max-w-6xl">
           <div className="md:max-w-2xl">
             {/* Badge */}
@@ -75,7 +75,8 @@ export function HeroSection() {
               className="mb-6 text-base text-muted-foreground md:text-lg"
             >
               Prenditi cura della tua pelle con uno screening dermatologico
-              mirato, con <strong className="text-foreground">mappatura dei nei inclusa</strong>
+              mirato, con{" "}
+              <strong className="text-foreground">mappatura dei nei</strong>
             </motion.p>
 
             {/* Price Card */}
@@ -86,7 +87,7 @@ export function HeroSection() {
               className="mb-6 rounded-2xl border border-border bg-card/95 p-5 shadow-xl backdrop-blur-sm md:p-6"
             >
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
-                Screening dermatologico + mappatura digitale dei nei inclusa
+                Screening dermatologico + mappatura dei nei
               </p>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-bold text-primary">60</span>
@@ -107,7 +108,7 @@ export function HeroSection() {
               <Button
                 asChild
                 size="lg"
-                className="h-14 w-full rounded-xl bg-[#25D366] text-base font-semibold text-white shadow-lg hover:bg-[#20BD5A]"
+                className="h-14 w-full rounded-xl bg-[#25D366] text-base font-semibold text-white shadow-lg hover:bg-[#20BD5A] md:w-auto md:flex-1"
               >
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=Ciao, vorrei prenotare uno screening dermatologico.`}
@@ -123,7 +124,7 @@ export function HeroSection() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="h-14 w-full rounded-xl border-2 border-primary bg-card/80 text-base font-semibold text-primary backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
+                className="h-14 w-full rounded-xl border-2 border-primary bg-card/80 text-base font-semibold text-primary backdrop-blur-sm hover:bg-primary hover:text-primary-foreground md:w-auto md:flex-1"
               >
                 <a href={`tel:${PHONE_NUMBER}`}>
                   <Phone className="mr-2 h-5 w-5" />
